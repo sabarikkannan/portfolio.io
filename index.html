@@ -8,7 +8,22 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
     <style>
-        
+        ul{
+            list-style-type: none;
+            overflow: hidden;
+            background-color: rgb(44, 40, 40);
+        }
+        li a{
+            float: left;
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 25px;
+            text-align: center;
+        }
+        li a:hover{
+            background-color: black;
+        }
        
         p{
             font-size: 50px;
@@ -19,7 +34,7 @@
     </style>
 </head>
 <body style="background-color: white;">
-    <h1><ul class="home">
+    <h1><ul id="home">
         <li> <a href="index.html">Home</a></li>
         <li> <a href="Personal.html">Personal</a></li>
         <li> <a href="contact.html">Contact</a></li>

@@ -15,3 +15,13 @@ li a{
 li a:hover{
     background-color: black;
 }
+th{
+    width: max-content;
+   
+    
+}
+tr{
+    width: max-content;
+    border: 2px;
+    border-color: aqua;
+}

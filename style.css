@@ -41,6 +41,10 @@ nav span {
     transition: 0.5s;
 }
 
+nav a:nth-child():active {
+    background: linear-gradient(45deg, #194b4f,#33fffc);
+}
+
 nav a:nth-child(1):hover~span {
     left: 0px;
 }
@@ -63,16 +67,18 @@ nav a:nth-child(5):hover~span {
 
 .main {
     display: flex;
-    
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-footer {
-    
+.Border-ack {
+   position: absolute;
+   bottom: 0;
+   left: 0;
 }
 
-h6 {
+h6,h1{
     color:white;
 }
 
@@ -84,8 +90,9 @@ h2 {
     color: white;
 }
 
+
 .project {
-    color: white;
+    color: wheat;
 }
 p {
     font-size: 40px;

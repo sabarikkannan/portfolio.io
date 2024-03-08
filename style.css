@@ -1,47 +1,134 @@
-header{
-    font-weight: bold;
-    font-size: 40px;
-}
-ul{
-    list-style-type: none;
-    overflow:hidden;
-    background-color: rgb(44, 40, 40);
-    width: auto;
+body{
+    background-color: black;
+    min-height: 100vh;
 }
 
-li a{
-    float: left;
-    text-align: center;
-    display: block;
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    position: relative;
+    width: 475px;
+    height: 50px;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
     color: white;
-    padding: 25px;
     text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
 }
-li a:hover{
-    background-color: black;
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg, #194b4f, #33fffc);
+    border-radius: 10px;
+    transition: 0.5s;
 }
-th{
-    width: max-content;
-    color: blue;
-   
+
+nav a:nth-child(1):hover~span {
+    left: 0px;
+}
+
+nav a:nth-child(2):hover~span {
+    left: 90px;
+}
+
+nav a:nth-child(3):hover~span {
+    left: 180px;
+}
+
+nav a:nth-child(4):hover~span {
+    left: 275px;
+}
+
+nav a:nth-child(5):hover~span {
+    left: 380px;
+}
+
+.main {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
     
 }
+
+h6 {
+    color:white;
+}
+
+h4 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+.project {
+    color: white;
+}
+p {
+    font-size: 40px;
+    color: wheat;
+}
+
+table {
+    background-color: aqua;
+    width: 50%;
+    text-align: center;
+}
+
+th{
+    width: 15px;
+    color: black;
+    border: 1px solid black; 
+}
+
 tr{
     width: max-content;
     border: 2px;
     border-color: aqua;
     color: blueviolet;
 }
-.Home{
-    background-color: black;
-}
-.Personal{
-    background-color: black;
-}
-.Contact{
-    background-color: black;
-}
-.Project{
-    background-color: black;
+
+th.jce bmhs {
+    width: fit-content;
+    color: red;
+    
 }
 
+#res {
+    color: rgb(83, 18, 235);
+    padding: 10px;
+    width: 100px;
+    display: flex;
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    align-items: center;
+    text-align: center;
+}
+
+#res:hover {
+    background-color: white;
+}

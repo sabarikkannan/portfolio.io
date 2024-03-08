@@ -5,22 +5,19 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
     <title>About Me</title>
-    <style>
-        abbr{
-            border: none;
-            text-decoration: none;
-        }
-    </style>
     
 </head>
-<body style="background-color: white;">
-    <header><ul>
-        <li> <a href="index.html">Home</a></li>
-        <li> <a href="Personal.html" class="Personal">Personal</a></li>
-        <li> <a href="contact.html">Contact</a></li>
-        <li> <a href="project.html">Project</a></li>
-        <li style="text-align: right;"><a href="https://www.linkedin.com/in/kkannan-s-1631491b5/", target="_blank", title="Linkedin">LinkedIn</a></li>
-    </ul></header>
+<body>
+    <header>
+        <nav>
+            <a class="home-active" href="index.html">Home</a>
+                 <a href="Personal.html" class="Personal">Personal</a>
+                 <a href="contact.html">Contact</a>
+                 <a href="project.html">Project</a>
+                 <a href="https://www.linkedin.com/in/kkannan-s-1631491b5/", target="_blank", title="Linkedin">LinkedIn</a>
+                 <span></span>
+        </nav>
+    </header>
    
 <h2 title="My name", class="name">
     S.KKANNAN 
@@ -34,28 +31,28 @@
         <table class="tab" border="3 solid black">
             <tr class="head">
                 <th>Degree</th>
-                <th>University</th>
+                <th class="university">University</th>
                 <th style="width: 5px;">Marks</th>
                 <th>Percentage</th>
                 <th><abbr title="YOP">Year of passing</abbr></th>
             </tr>
             <tr>
                 <th><abbr title="B.E">B.E</abbr> </th>
-                <th><abbr title="JCE">Jerusalem college of Engineering</abbr></th>
+                <th class="jce"><abbr title="JCE">Jerusalem college of Engineering</abbr></th>
                 <th>8.4/10</th>
                 <th>84%</th>
                 <th>2024</th>
             </tr>
             <tr>
                 <th>HSC</th>
-                <th>Brilliant Matriculation Higher secondary school &nbsp;</th>
+                <th class="bmhs">Brilliant Matriculation Higher secondary school &nbsp;</th>
                 <th>459/600</th>
                 <th>76.5%</th>
                 <th>2020</th>
             </tr>
             <tr>
                 <th>SSLC</th>
-                <th>Brilliant Matriculation Higher secondary school &nbsp;</th>
+                <th class="bmhs">Brilliant Matriculation Higher secondary school &nbsp;</th>
                 <th>434/500</th>
                 <th>86%</th>
                 <th>2018</th>
@@ -64,14 +61,14 @@
     </p>
     
 </h2>
-<h2>
-    Resume
-    <br>
-    <br>
+
+
+<a href="https://drive.google.com/file/d/166FOnwpmzga9WToIBUCXgk8j5Ozz5BQ9/view?usp=drive_link" target="_blank">
+    <button id="res">Resume</button>
+</a>
+
     
-    <iframe id="forPostyouradd" src="Resume.pdf" width="500" height="500" style="background:#ffffff"></iframe>
-    
-</h2>
+
 </body>
 </html>
 
